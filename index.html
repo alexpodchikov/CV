@@ -8,14 +8,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:ital,wght@1,500&family=Sacramento&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/d0156047d2.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/styles.css">
-  <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
     <nav>
       <div class="navbar">
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
+          <li><a href="#about"><span>About</span></a></li>
           <li><a href="#footer">Contact</a></li>
           <li><a href="https://github.com/alexpodchikov">Projects</a></li>
         </ul>
@@ -34,7 +33,7 @@
 
   <div class="top-container">
     <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
-    <h1>I'am Alexander.</h1>
+    <h1 class="my-name">I'am Alexander.</h1>
     <h2>a programmer.</h2>
     <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
     <img src="images/mountain.png" alt="mountain-img">
@@ -87,7 +86,7 @@
       if (prevScrollpos > currentScrollPos) {
         document.querySelector("nav").style.top = "0";
       } else {
-        document.querySelector("nav").style.top = "-70px";
+        document.querySelector("nav").style.top = "-200px";
       }
       prevScrollpos = currentScrollPos;
     }

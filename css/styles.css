@@ -211,10 +211,6 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    max-width: 100%;
-    height: auto;
-  }
 
   .nav-links {
     padding-left: 0;
@@ -239,6 +235,81 @@ nav {
   }
 }
 
-@-ms-viewport{
-  width: device-width;
-}
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait)
+ {
+
+    .my-name {
+      font-size: 7rem;
+    }
+    
+    .profile {
+      width: 90%;
+    }
+
+    .profile-img {
+      width: auto;
+    }
+
+    .skill-row {
+      width: 90%;
+    }
+
+    .contact-message {
+      width: 90%;
+    }
+
+    nav {
+      height: 10%;
+    }
+
+    .nav-links {
+      height: auto;
+      padding-left: 0;
+      width: 70%;
+    }
+
+    .nav-links li {
+      width: 100%;
+    }
+
+    .nav-links a {
+      font-size: 275%;
+      margin: 10px;
+    }
+
+    .nav-links-icons {
+      height: auto;
+      padding: 0;
+      width: 30%;
+    }
+
+    .nav-links-icons a {
+      font-size: 275%;
+      margin: 10px;
+    }
+
+    .top-container {
+      padding-top: 200px;
+    }
+
+    .top-cloud {
+      top: 200px;
+      right: 50px;
+    }
+
+    .bottom-cloud {
+      left: 100px;
+    }
+
+    .btn {
+      padding: 50px 100px;
+    }
+
+    .contact-me a {
+      font-size: 275%;
+    }
+
+    .bottom-container a {
+      font-size: 275%;
+    }
+  }
