@@ -235,19 +235,19 @@ nav {
   }
 }
 
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait)
+@media only screen and (min-device-width: 280px) and (orientation : portrait)
  {
 
     .my-name {
       font-size: 7rem;
     }
-    
+
     .profile {
       width: 90%;
     }
 
     .profile-img {
-      width: auto;
+      width: 400px;
     }
 
     .skill-row {
@@ -302,7 +302,7 @@ nav {
     }
 
     .btn {
-      padding: 50px 100px;
+      padding: 40px 70px;
     }
 
     .contact-me a {
