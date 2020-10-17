@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Alexander Podchikov</title>
+  <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:ital,wght@1,500&family=Sacramento&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d0156047d2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav>
+      <div class="navbar">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#footer">Contact</a></li>
+          <li><a href="https://github.com/alexpodchikov">Projects</a></li>
+        </ul>
+        <ul class="nav-links-icons">
+          <li><a href="https://github.com/alexpodchikov">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li><a href="https://www.linkedin.com/in/alexander-podchikov/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  <div class="top-container">
+    <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
+    <h1>I'am Alexander.</h1>
+    <h2>a programmer.</h2>
+    <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
+    <img src="images/mountain.png" alt="mountain-img">
+  </div>
+
+  <div class="middle-container" id="about">
+    <div class="profile">
+      <img class="profile-img" src="images/profile-img2.png" alt="Alex profile picture">
+      <h2>Hello.</h2>
+      <p>A software engineer with a passion to learn and develop in the field.
+      I am highly motivated, with great work ethics and ability to achieve goals and work in a team.</p>
+    </div>
+    <hr>
+    <div class="skills">
+      <h2>My Skills.</h2>
+      <div class="skill-row">
+        <img class="skills1-img" src="images/skills1.png" alt="css-img">
+        <h3>Work Experience</h3>
+        <p>During my studies I experienced in computer architecture and structure, object-oriented programming, discrete mathematics, computer science logic,
+        real-time programming and Machine Learning Seminar, programming languages C, Java, Assembly and much more.</p>
+      </div>
+      <div class="skill-row">
+        <img class="skills2-img" src="images/skills2.png" alt="java-img">
+        <h3>Web Development</h3>
+        <p>At the moment I am focusing in web development, both front-end and back-end. I spend most of my time in self-learning, on various sites and thus gaining experience in the field.</p>
+      </div>
+    </div>
+    <hr>
+    <div class="contact-me">
+      <h2>Get In Touch</h2>
+      <h3>Ready to work a full-time job.</h3>
+      <p class="contact-message">If you are looking for a hardworking employee, who meets goals and has professional skills and ability to work in a
+      team, let's work together.</p>
+      <a class="btn" href="mailto:podchikov@gmail.com"><i class="fa fa-envelope"></i> CONTACT ME</a>
+    </div>
+  </div>
+
+
+  <div class="bottom-container" id="footer">
+    <a class="footer-link" href="https://www.linkedin.com/in/alexander-podchikov/">LinkedIn</a>
+    <a class="footer-link" href="https://www.facebook.com/alexander.podchikov">Facebook</a>
+    <a class="footer-link" href="https://github.com/alexpodchikov">GitHub</a>
+    <p class="copyright"></p>
+  </div>
+
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.querySelector("nav").style.top = "0";
+      } else {
+        document.querySelector("nav").style.top = "-70px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    const year = new Date().getFullYear();
+    document.querySelector(".copyright").innerHTML = "© " + year + " Alexander Podchikov."
+  </script>
+</body>
+
+</html>

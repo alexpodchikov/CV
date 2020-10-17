@@ -1,0 +1,235 @@
+body {
+  color: #40514e;
+  /* changing "text" color in the body of web page */
+  font-family: "Merriweather", serif;
+  margin: 0;
+  /* to delete margin between web page and body element */
+  text-align: center;
+  /* to center all the elements in the body conteiner */
+}
+
+h1 {
+  color: #66bfbf;
+  font-family: "Sacramento", cursive;
+  font-size: 5rem;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+h2 {
+  color: #66bfbf;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #11999e;
+  font-family: "Montserrat", sans-serif;
+}
+
+hr {
+  border-color: #eaf6f6;
+  /* all of that can be changed by one line: border: dotted #EAF6F6 5px*/
+  border-style: dotted none none none;
+  border-width: 5px;
+  margin: 100px auto;
+  /* "auto" for the left and right is for keepeng the "hr" to be centered */
+  width: 5%;
+  /* width of the box of the "hr" */
+}
+
+.top-cloud {
+  position: absolute;
+  /* to move the element inside the parent box*/
+  right: 400px;
+  top: 70px;
+}
+
+.bottom-cloud {
+  bottom: 300px;
+  left: 400px;
+  position: absolute;
+}
+
+nav {
+  position: fixed;
+  background-color: #e4f9f5;
+  height: 4rem;
+  z-index: 1;
+  transition: top 0.3s;
+  width: 100%;
+}
+
+.navbar {
+  box-shadow: none;
+  display: flex;
+  height: 100%;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  width: 30%;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: auto;
+}
+
+.nav-links a {
+  color: #66bfbf;
+  text-decoration: none;
+  transition: color 1s;
+}
+
+.nav-links a:hover {
+  color: #11999e;
+}
+
+.nav-links-icons {
+  display: flex;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  width: 10%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+  padding-right: 40px;
+}
+
+.nav-links-icons a {
+  color: #66bfbf;
+  text-decoration: none;
+  transition: color 1s;
+}
+
+.nav-links-icons a:hover {
+  color: #11999e;
+}
+
+.top-container {
+  background-color: #e4f9f5;
+  padding-top: 100px;
+  position: relative;
+  /* to move elements inside the box */
+}
+
+.profile {
+  line-height: 2;
+  margin: 100px auto 100px auto;
+  width: 30%;
+}
+
+.profile-img {
+  border: 7px solid #eaf6f6;
+  border-radius: 50%;
+  width: 150px;
+}
+
+.skill-row {
+  line-height: 2;
+  /* it's space between the lines of the text*/
+  margin: 100px auto 100px auto;
+  /* top right bottom left. Also this need to be added when width was changed to centered the elements in the box. */
+  text-align: left;
+  /* to align elements in the box to the left of the box */
+  width: 50%;
+  /* margin need to be "auto" in the left and right to be centered  after the "width" changing*/
+}
+
+.skills1-img {
+  float: left;
+  /* the img is floating-wrapping in the left of the text */
+  margin-right: 30px;
+  width: 20%;
+}
+
+.skills2-img {
+  float: right;
+  margin-left: 30px;
+  width: 20%;
+}
+
+.contact-message {
+  line-height: 2;
+  margin: 50px auto;
+  width: 32%;
+}
+
+.btn {
+  background-color: #2bc4ad;
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 15px 30px;
+  text-decoration: none;
+  transition: background-color 1s;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  background-color: #11999e;
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.contact-me i {
+  margin-right: 10px;
+}
+
+.bottom-container {
+  background-color: #66bfbf;
+  margin-top: 100px;
+  padding: 40px;
+}
+
+.bottom-container a {
+  color: #11999e;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin: 20px;
+  text-decoration: none;
+  transition: color 1s;
+}
+
+.bottom-container a:hover {
+  /* hover is a pseudo class of CSS and it's what happen to element when mouse over it */
+  color: #eaf6f6;
+}
+
+.copyright {
+  color: #eaf6f6;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    padding-left: 0;
+    width: 50%;
+  }
+
+  .nav-links-icons {
+    padding: 0;
+    width: 20%;
+  }
+
+  .profile {
+    width: 80%;
+  }
+
+  .skill-row {
+    width: 80%;
+  }
+
+  .contact-message {
+    width: 70%;
+  }
+}
