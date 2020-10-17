@@ -211,6 +211,9 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+
+  }
   .nav-links {
     padding-left: 0;
     width: 50%;
