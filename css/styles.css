@@ -212,8 +212,10 @@ nav {
 
 @media screen and (max-width: 768px) {
   body {
-
+    max-width: 100%;
+    height: auto;
   }
+
   .nav-links {
     padding-left: 0;
     width: 50%;
@@ -235,4 +237,8 @@ nav {
   .contact-message {
     width: 70%;
   }
+}
+
+@-ms-viewport{
+  width: device-width;
 }
