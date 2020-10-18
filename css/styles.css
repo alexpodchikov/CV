@@ -210,8 +210,8 @@ nav {
   margin-top: 40px;
 }
 
-@media screen and (max-width: 768px) {
-
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)
+{
   .nav-links {
     padding-left: 0;
     width: 50%;
@@ -235,7 +235,7 @@ nav {
   }
 }
 
-@media only screen and (min-device-width: 280px) and (orientation : portrait)
+@media only screen and (min-device-width: 280px) and (max-device-height: 823px) and (orientation : portrait)
  {
 
     .my-name {
