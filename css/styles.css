@@ -235,7 +235,7 @@ nav {
   }
 } */
 
-@media only screen and (max-device-width: 768px) and (orientation : portrait)
+@media screen and (max-device-width: 768px)
  {
 
     .my-name {
@@ -243,18 +243,21 @@ nav {
     }
 
     .profile {
+      font-size: 125%;
       width: 90%;
     }
 
     .profile-img {
-      width: 400px;
+      width: 50%;
     }
 
     .skill-row {
+      font-size: 125%;
       width: 90%;
     }
 
     .contact-message {
+      font-size: 125%;
       width: 90%;
     }
 
