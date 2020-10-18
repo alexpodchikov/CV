@@ -235,7 +235,7 @@ nav {
   }
 } */
 
-@media screen and (max-device-width: 768px)
+@media screen and (max-device-width: 768px) and (orientation : portrait)
  {
 
     .my-name {
@@ -257,7 +257,7 @@ nav {
     }
 
     .contact-message {
-      font-size: 125%;
+      font-size: 175%;
       width: 90%;
     }
 
@@ -296,8 +296,8 @@ nav {
     }
 
     .top-cloud {
-      top: 200px;
       right: 50px;
+      top: 200px;
     }
 
     .bottom-cloud {
